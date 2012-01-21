@@ -10,11 +10,11 @@ struct node *first=NULL;
 struct node *newnode;
 struct node *temp;
 
-void push(int data)  //this function is used for push data into stack
+void push(int data)
 {
-  newnode=(struct node*)malloc(sizeof(struct node));//generate memory for new node
+  newnode=(struct node*)malloc(sizeof(struct node));
   newnode->value=data;
-  newnode->link=NULL;         //create node
+  newnode->link=NULL;         
 
     if(first==NULL)
     {
